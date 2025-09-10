@@ -10,6 +10,19 @@
 
 Dificultad:  🟢🟡*/
 
+//Le pregunto al usuario un número y lo convierto en entero.
 const topeIngresado = parseInt(
   prompt("Ingrese un numero (max 50) para formar la piramide")
 );
+
+if (isNaN(topeIngresado) || topeIngresado < 1 || topeIngresado > 50) {
+  alert("Numero invalido");
+} else {
+  for (let numero = topeIngresado; numero >= 1; numero--) {
+    let fila = "";
+    for (let repeticion = 1; repeticion <= numero; repeticion++) {
+      fila = fila + numero;
+    }
+    document.writeln(fila + "<br>");
+  }
+}
