@@ -9,3 +9,13 @@
 
 Dificultad:  🟢🟡
 */
+
+//Bucle externo que hace las filas
+for (let numero = 1; numero <= 30; numero++) {
+  let fila = "";
+//Bucle interno
+  for (let repeticion = 1; repeticion <= numero; repeticion++){
+    fila = fila + numero;}
+
+document.writeln(fila + '<br>');
+  }
